@@ -10,7 +10,7 @@ import CourseList from "../../components/courses/CourseList";
 import CourseView from "../../components/courses/CourseView";
 import EmptyState from "../../components/common/EmptyState";
 import Loader from "../../components/common/Loader";
-import Modal from "../../components/common/Modal";
+import Modal from "../../components/common/Modal2";
 import CourseForm from "../../components/courses/CourseForm";
 import Button from "../../components/common/Button";
 
@@ -103,6 +103,7 @@ const TeacherCourses = () => {
             }
           }}
           onCancel={() => setShowModal(false)}
+          hideAssignTeacher={true}
         />
       </Modal>
     </div>

@@ -40,18 +40,13 @@ const Navbar = () => {
       onClick: () =>
         navigate("/profile", { state: { backgroundLocation: location } }),
     },
-  ];
-
-  // show Settings only for admin users
-  if (user?.userType === "admin") {
-    userNavigation.push({
+    {
       name: "Settings",
       onClick: () =>
         navigate(user?.userType === "admin" ? "/admin/settings" : "/profile"),
-    });
-  }
-
-  userNavigation.push({ name: "Sign out", onClick: () => setShowLogout(true) });
+    },
+    { name: "Sign out", onClick: () => setShowLogout(true) },
+  ];
   return (
     <header className="sticky top-0 z-30 bg-white dark:bg-gray-800 shadow-sm glass-surface drop-in">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
