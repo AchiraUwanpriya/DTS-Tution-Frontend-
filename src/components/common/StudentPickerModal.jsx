@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import Modal from "./Modal2";
+import Modal from "./Modal";
 import Button from "./Button";
 import Loader from "./Loader";
 import Avatar from "./Avatar";

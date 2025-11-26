@@ -3,8 +3,8 @@ import { createPortal } from "react-dom";
 
 const sizeClasses = {
   sm: "max-w-sm",
-  md: "max-w-5xl",
-  lg: "max-w-2xl",
+  md: "max-w-md",
+  lg: "max-w-lg",
   xl: "max-w-2xl",
   "2xl": "max-w-3xl",
 };

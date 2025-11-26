@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import Modal from "../common/Modal2";
+import Modal from "../common/Modal";
 import Button from "../common/Button";
 
 const ClassPickerModal = ({
