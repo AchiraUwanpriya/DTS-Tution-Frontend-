@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import Modal from "../common/Modal";
+import Modal from "../common/Modal2";
 import Button from "../common/Button";
 import CourseForm from "./CourseForm";
 import {
@@ -168,6 +168,8 @@ const CoursePickerModal = ({
             }}
             onCancel={onClose}
             initialData={courseFormDefaults || {}}
+            preferStoredTeacher={true}
+            hideAssignTeacher={true}
           />
         </div>
       </Modal>
@@ -282,6 +284,8 @@ const CoursePickerModal = ({
             }}
             onCancel={() => setShowCourseModal(false)}
             initialData={courseFormDefaults || {}}
+            preferStoredTeacher={true}
+            hideAssignTeacher={true}
           />
         </Modal>
       </div>
